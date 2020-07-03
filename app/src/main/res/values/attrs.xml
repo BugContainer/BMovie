@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundView">
+        <attr name="radius" format="dimension" />
+        <attr name="topLeftRadius" format="dimension" />
+        <attr name="topRightRadius" format="dimension" />
+        <attr name="bottomLeftRadius" format="dimension" />
+        <attr name="bottomRightRadius" format="dimension" />
+    </declare-styleable>
+
+    <!--水平进度条-->
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="pb_padding" format="dimension" />
+        <attr name="pb_bg_color" format="color|reference" />
+        <attr name="pb_pb_color" format="color|reference" />
+        <attr name="pb_max" format="integer" />
+        <attr name="pb_progress" format="integer" />
+    </declare-styleable>
+
+    <!--五角星-->
+    <declare-styleable name="FivePointStar">
+        <attr name="fp_radius" format="dimension" />
+        <attr name="fp_background_color" format="color|reference" />
+        <attr name="fp_border_color" format="color|reference" />
+    </declare-styleable>
+</resources>

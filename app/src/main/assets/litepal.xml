@@ -1,0 +1,10 @@
+<litepal>
+    <dbname value="bmovie" />
+    <version value="1" />
+    <list>
+        <mapping class="com.bugli.bmovie.data.model.Movie" />
+        <mapping class="com.bugli.bmovie.data.model.MovieList" />
+        <mapping class="com.bugli.bmovie.data.model.WebSite" />
+        <mapping class="com.bugli.bmovie.data.model.Video" />
+    </list>
+</litepal>

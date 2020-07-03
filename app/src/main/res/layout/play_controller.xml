@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/controller"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_controller"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/halfTp"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="28dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/back_bg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/volume"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/volume" />
+
+        <TextView
+            android:id="@+id/play_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="1.0"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/playing_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:gravity="center"
+            android:text="正在播放..."
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adjust_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/top_controller"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <com.bugli.bmovie.widget.HorizontalProgressBar
+            android:id="@+id/volume_weight"
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            app:pb_bg_color="#f0f0f0"
+            app:pb_max="-1000"
+            app:pb_padding="4dp"
+            app:pb_pb_color="@color/colorDeepRed"
+            app:pb_progress="0" />
+
+        <LinearLayout
+            android:id="@+id/speed_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="80dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/speed_1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_speed_bg"
+                android:gravity="center"
+                android:text="0.5"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/speed_2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_speed_bg"
+                android:gravity="center"
+                android:text="1.0"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/speed_3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_speed_bg"
+                android:gravity="center"
+                android:text="1.5"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/speed_4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/round_speed_bg"
+                android:gravity="center"
+                android:text="2.0"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/play_or_pause"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@color/pause" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/last_video"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/previous" />
+
+        <TextView
+            android:id="@+id/current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/colorWhite" />
+
+        <com.bugli.bmovie.widget.HorizontalProgressBar
+            android:id="@+id/video_progress"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            app:pb_bg_color="#f0f0f0"
+            app:pb_max="-1000"
+            app:pb_padding="4dp"
+            app:pb_pb_color="@color/colorGreen"
+            app:pb_progress="0" />
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/colorWhite" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/next_video"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@color/next" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/resize"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@color/enter_full" />
+    </LinearLayout>
+</RelativeLayout>

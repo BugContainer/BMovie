@@ -1,0 +1,22 @@
+### 每日推荐
+cardView+recyclerview+自定义LayoutManager
+根据用户最近播放信息推荐10部
+没有记录则推荐最新高分电影或电视剧
+### 影单
+根据每个影单中第一部电影类型分类，使用tabLayout+viewpager+fragment
+### 片库
+多个recyclerview嵌套
+根据时间、地区、（电影、电视剧、动漫、综艺、纪录片）类型、影片类型（喜剧等）、（评分和最新）设置搜索按钮
+### 设置
+
+
+####数据库设计
+影单 电影/电视剧 演员 标签 (多对多关系)
+video表
+website表
+
+
+http://www.okzyw.com/index.php?m=vod-search-pg-1-wd-关键词.html //OK资源网
+http://www.zuidazy5.com/index.php?m=vod-search-pg-2-wd-关键词.html //最大资源网
+http://www.zuidazy5.com/index.php?m=vod-search-pg-2-wd-关键词.html //最大资源网
+

@@ -1,0 +1,91 @@
+<resources>
+
+
+    <!--主界面-->
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="landTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">false</item>-->
+        <!--关于导航栏阴影 可以通过设置窗口背景为渐变 透明到纯黑 -->
+        <!--导航栏-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">#00000000</item>
+        <!--手动设置状态栏透明才行-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <!--窗口透明-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--窗口渐变色-->
+        <!--<item name="android:windowBackground">@color/window_bg</item>-->
+        <!---->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="Dialog_Common" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MaxFigureActivity" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+    <!--搜索页面-->
+    <style name="AppSearch" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--导航栏-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@color/colorAccent</item>
+        <!--手动设置状态栏透明才行-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
+    </style>
+    <!--欢迎页面-->
+    <style name="AppWelcome" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--窗口透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/welcome_bg</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <!--导航栏-->
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">#00000000</item>
+        <!--手动设置状态栏透明才行-->
+        <!--        <item name="android:windowTranslucentStatus">false</item>
+                <item name="android:statusBarColor">#00000000</item>-->
+    </style>
+    <!--搜索界面弹出动画-->
+    <style name="PopupWindowSearchAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popup_search_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_search_out</item>
+    </style>
+    <!--管理界面弹出动画-->
+    <style name="PopupWindowManageAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/popup_manage_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_manage_out</item>
+    </style>
+</resources>

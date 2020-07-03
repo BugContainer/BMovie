@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLightBlue">#23e2d2</color>
+    <color name="colorDeepRed">#ff0f20</color>
+    <color name="colorWhite">#f2f2f2</color>
+    <color name="colorGreen">#EE44EA07</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPink">#EB7EAF</color>
+    <color name="colorLightYellow">#F6F6A1</color>
+    <color name="colorLightGreen">#BAF164</color>
+    <color name="colorDeepBlue">#2D2Dff</color>
+    <color name="colorBrown">#6D3D3D</color>
+    <color name="colorPurple">#871CC2</color>
+    <color name="colorGray">#D4D3D3</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDeepBlack">#030303</color>
+    <color name="halfTp">#22050505</color>
+    <color name="window_bg" tools:ignore="ReferenceType">@drawable/window_bg</color>
+    <color name="top" tools:ignore="ReferenceType">@drawable/top_bg</color>
+
+
+    <color name="previous" tools:ignore="ReferenceType">@drawable/exo_controls_previous</color>
+    <color name="next" tools:ignore="ReferenceType">@drawable/exo_controls_next</color>
+    <color name="play" tools:ignore="ReferenceType">@drawable/exo_controls_play</color>
+    <color name="pause" tools:ignore="ReferenceType">@drawable/exo_controls_pause</color>
+    <color name="enter_full" tools:ignore="ReferenceType">@drawable/exo_controls_fullscreen_enter
+    </color>
+    <color name="exit_full" tools:ignore="ReferenceType">@drawable/exo_controls_fullscreen_exit
+    </color>
+
+    <color name="round_before" tools:ignore="ReferenceType">@drawable/round_transpant_bg</color>
+    <color name="round_pressed" tools:ignore="ReferenceType">@drawable/round_light_bg</color>
+</resources>
